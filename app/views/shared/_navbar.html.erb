@@ -20,9 +20,14 @@
           </div>
         </li>
       <% else %>
-        <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+      <div class="sign-up-nav">
+          <li class="nav-item" style="display: flex;">
+            <%= link_to "Login", new_user_session_path, class: "nav-link", style: "display: inline-block;" %>
+            <%= link_to "Sign up", new_user_registration_path, class: "nav-link", style: "display: inline-block;" %>
+          </li>
+
         </li>
+      </div>
       <% end %>
     </ul>
   </div>
